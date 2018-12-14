@@ -46,6 +46,11 @@ module.exports = {
           title: '社区模块',
           collapsable: false,
           children: genSidebarConfig("nuxt/CommunityModules", true),
+        },
+        {
+          title: '其他模块',
+          collapsable: false,
+          children: genSidebarConfig("nuxt/OtherModules", true),
         },{
           title: '工具',
           collapsable: false,

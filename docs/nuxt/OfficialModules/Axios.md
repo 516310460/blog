@@ -233,3 +233,98 @@ this.$axios.setToken(false)
 该选项使用在 `baseURL` 和 `browserBaseURL`
 
 可以自定义 API_PREFIX, API_HOST (或 HOST) 和 API_PORT (或 PORT) 环境变量。
+
+`prefix` 的默认值为 `/`
+
+### baseURL
+
+- Default: `baseURL` (或 `prefix` 在使用 `options.proxy` 启用)
+
+在客户端使用和预先添加请求的基本URL。
+
+环境变量 `API_URL_BROWSER` 可用于覆盖 `browserBaseURL`
+
+### https
+
+- Default: `false`
+
+如果设置为 `true`，`http://` 在 `baseURL` 和 `browserBaseURL` 将会变成 `https://`
+
+### progress
+
+- Default: `true`
+
+在和Nuxt.js集成时并发出请求时显示加载条（只有在浏览器上加载条时可用）
+
+还可以使用 `progress` 配置禁用每个请求的进度条。
+
+nuxt.config.js
+```js
+{
+  modules: [
+    '@nuxtjs/axios'
+  ],
+​
+  axios: {
+    proxy: true // Can be also an object with default options
+  },
+​
+  proxy: {
+    '/api/': 'http://api.example.com',
+    '/api2/': 'http://api.another-website.com'
+  }
+}
+```
+
+注意：不需要手动注册 `@nuxtjs/proxy` 模块，但它确实需要在您的依赖项中。
+
+注意：将 `/api` 添加到API端点的所有请求中。如果需要删除它，请使用 `/pathRewrite`： 
+
+```js
+proxy: {
+  '/api/': { target: 'http://api.example.com', pathRewrite: {'^/api/': ''} }
+}
+```
+
+### retry
+
+- Default: `false`
+  * 自动拦截失败的请求，并在每次使用 [axios-retry](https://github.com/softonic/axios-retry) 时重试它们。
+
+默认情况下，如果将 `retry` 值设置为 `true`，则重试次数将为3次。您可以通过传递这样的对象来更改它：
+
+```js
+axios: {
+  retry: { retries: 3 }
+}
+```
+
+### credentials
+
+- Default: `false`
+
+添加拦截器时自动设置 `withCredentials`，请求axios时配置 `baseUrl` ，允许将身份验证头传递给后端
+
+### debug
+
+- Default: `false`
+
+添加拦截器来记录请求和响应。
+
+### proxyHeaders
+
+- Default: `true`
+
+在SSR上下文中，将客户端请求头设置为axios的默认请求头。这对于在服务器端进行需要基于cookie的auth的请求很有用。还有助于在SSR和客户端代码中做出一致的请求。
+
+> 注意：如果在受CloudFlare CDN保护的URL上请求，则应将其设置为false，以防止CloudFlare错误地检测到反向代理循环并返回403错误。
+
+### proxyHeadersIgnore
+
+- Default: `['host', 'accept']`
+
+只有在 `proxyHeaders` 设置为true 时才有效。将不需要的请求标头移除到SSR中的API后端。
+
+## 链接
+
+- [Github](https://axios.nuxtjs.org/)
