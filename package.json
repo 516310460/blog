@@ -1,0 +1,33 @@
+{
+  "name": "516310460.github.io",
+  "version": "1.0.0",
+  "description": "rty docs",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "sh": "bash deploy.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/516310460/516310460.github.io.git"
+  },
+  "keywords": [
+    "docs",
+    "rty"
+  ],
+  "author": "rty",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/516310460/516310460.github.io/issues"
+  },
+  "homepage": "https://github.com/516310460/516310460.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^4.10.0",
+    "sass-loader": "^7.1.0",
+    "vuepress": "^0.14.4"
+  }
+}
