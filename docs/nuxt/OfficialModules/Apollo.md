@@ -6,7 +6,12 @@
 ## 使用
 
 yarn 和 npm 安装:
+
 ```js
+yarn add @nuxtjs/apollo
+＃如果您使用*.gql或*.graphql文件，请先将graphql-tag添加到您的依赖项 
+yarn add graphql-tag
+OR
 npm install --save @nuxtjs/apollo
 ＃如果您使用*.gql或*.graphql文件，请先将graphql-tag添加到您的依赖项 
 npm install --save graphql-tag
