@@ -59,7 +59,7 @@ npm i -D guess-webpack
 
 运行 `npm run dev` 并打开 `http://localhost:3000`，您的应用程序应如下所示：
 
-<img src="https://guess-js.github.io/images/nuxt.gif" alt=""/>
+<img src="../../.vuepress/public/img/guess1.gif" alt=""/>
 
 ## 配置Nuxt.js
 

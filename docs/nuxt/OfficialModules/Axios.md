@@ -1,4 +1,4 @@
-# ⚡ Axios
+# 📦 Axios
 
 > 安全，轻松的Axios与Nuxt.js集成
 

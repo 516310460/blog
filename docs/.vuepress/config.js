@@ -2,7 +2,7 @@ const path = require('path');
 const fs = require('fs');
 module.exports = {
   title: "Hom Wang",
-  description: "热爱Vue.js、热爱Nuxt.js、热爱Node.js，QQ交流群: 604203227",
+  description: "Vue.js、Nuxt.js、Node.js、Flutter",
   head: [
     [
       "link",
