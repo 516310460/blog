@@ -2,7 +2,7 @@
 
 ## 介绍
 
-该教程感谢[Curtis Belt](https://github.com/CurtisBelt)
+该教程感谢[Curtis Belt](https://github.com/CurtisBelt)，这是一个非常容易理解的[Demo](https://github.com/CurtisBelt/pm2-nuxt-blue-green-deploy)
 
 Ubuntu 测试成功
 
