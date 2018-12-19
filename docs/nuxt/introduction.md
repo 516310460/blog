@@ -6,6 +6,8 @@
 
 如有不对或建议的地方还请大家反应出来，我希望通过QQ群: <a target="_blank" href="//shang.qq.com/wpa/qunwpaidkey=29f4417f6627cb73eb304b3833698cfe28ea196858df935010a186ba84db2288"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="Vue/Nuxt.js" title="Vue/Nuxt.js"></a> 或 [Discordapp](https://discordapp.com/channels/473401852243869706/473511822893383691) 一起交流讨论Nuxt.js
 
+也可以前往[blog.Lichter.io](https://blog.lichter.io/?ref=awesome-nuxt)核心团队成员`Alexander Lichter`关于Nuxt.js，Javascript，Vue等的博客
+
 ## 关于 Nuxt.js
 
 2016 年 10 月 25 日，[zeit.co](https://zeit.co/) 背后的团队对外发布了 [Next.js](https://zeit.co/blog/next)，一个 React 的服务端渲染应用框架。几小时后，与 Next.js 异曲同工，一个基于 [Vue.js](https://vuejs.org) 的服务端渲染应用框架应运而生，我们称之为：[Nuxt.js](https://zh.nuxtjs.org)。
