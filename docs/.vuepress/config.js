@@ -24,6 +24,10 @@ module.exports = {
         link: '/nuxt/introduction'
       },
       {
+        text: 'Javascript',
+        link: '/Javascript/introduction'
+      },
+      {
         text: '了解更多',
         items: [
           { text: 'Github', link: 'https://github.com/516310460' },
@@ -59,6 +63,14 @@ module.exports = {
           title: '教程',
           collapsable: false,
           children: genSidebarConfig("nuxt/Tutorials", true),
+        }
+      ],
+      "/Javascript/": [
+        "introduction",
+        {
+          title: '代码重构',
+          collapsable: false,
+          children: genSidebarConfig("Javascript/Case", true),
         }
       ],
     }
