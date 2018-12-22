@@ -66,7 +66,7 @@ nuxt.config.js
 ```js
 export  default {
     //感谢Pooya Parsa提供了Nuxt Axios模块
-    //注意yamlin axios自动需要@nuxtjs / 
+    //注意yamlin 自动引用了@nuxtjs/axios
     axios: {
         //感谢Ben Howdle提供的API测试服务 
         baseURL: 'https://reqres.in/'
@@ -77,6 +77,8 @@ export  default {
     modules: [['yamlful-nuxt', { srcDir: './resources' }]]
 }
 ```
+
+注意: 如果你使用了`yamlful-nuxt`模块，那么你就不需要再次引用`nuxt-axios`模块了，因为作者已经将它引用了，你无需再次引用（因为你再次引用的时候会出错）
 
 pages/index.vue
 
