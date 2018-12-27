@@ -56,9 +56,9 @@ const sample = {
 yarn 和 npm 安装:
 
 ```js
-yarn add yamful-nuxt --save
+yarn add yamlful-nuxt --save
 OR
-npm install yamful-nuxt --save
+npm install yamlful-nuxt --save
 ```
 
 nuxt.config.js
